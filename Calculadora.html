@@ -13,7 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            min-height: 100vh; /* Cambiado a min-height para evitar el uso excesivo de height */
+            min-height: 100vh; 
             background-image: url('https://www.bupasalud.com/sites/default/files/styles/640_x_400/public/articulos/2023-02/fotos/food-variada.jpg?itok=wqkspjsJ');
             background-size: cover;
         }
@@ -32,7 +32,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            z-index: 1000; /* Asegura que el encabezado esté por encima del contenido */
+            z-index: 1000; 
         }
         header h1 {
             margin: 0;
@@ -52,19 +52,19 @@
             background-color: #45a049;
         }
         .container {
-            margin-top: 100px; /* Ajusta este valor según la altura del header */
+            margin-top: 100px; 
             display: flex;
             background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 10px;
             width: 90%;
-            max-width: 900px; /* Ancho máximo ajustado */
+            max-width: 900px; 
         }
         .calculadora {
-            flex: 1; /* Hace que la calculadora ocupe el espacio disponible */
-            padding: 20px; /* Ajusta el padding según sea necesario */
-            box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+            flex: 1; 
+            padding: 20px; 
+            box-sizing: border-box; 
             display: flex;
             flex-direction: column;
             align-items: center; /* Centra los elementos horizontalmente */
@@ -75,23 +75,23 @@
             margin: 10px 0;
         }
         .form-group {
-            margin-bottom: 15px; /* Espacio entre cada grupo de formulario */
-            width: 100%; /* Ajusta el ancho para ocupar todo el espacio disponible */
+            margin-bottom: 15px; 
+            width: 100%; 
         }
         .form-group label {
             display: block;
             font-weight: bold;
             font-size: 14px;
-            margin-bottom: 5px; /* Espacio inferior entre etiqueta y campo */
+            margin-bottom: 5px; 
         }
         .form-group input, .form-group select {
-            width: 100%; /* Ancho completo */
+            width: 100%; 
             padding: 8px;
             margin-top: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 14px;
-            box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+            box-sizing: border-box; 
         }
         .form-group input[type="radio"] {
             width: auto; /* Tamaño automático para los radio buttons */
@@ -102,8 +102,8 @@
             font-size: 14px;
         }
         .btn {
-            width: 200px; /* Ancho fijo del botón */
-            margin-top: 10px; /* Espacio superior */
+            width: 200px;  
+            margin-top: 10px;  
             padding: 10px;
             background-color: #4CAF50;
             color: white;
@@ -111,15 +111,15 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 14px;
-            box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+            box-sizing: border-box;  
         }
         .btn:hover {
             background-color: #45a049;
         }
         .resultados {
             flex: 1; /* Para que ocupe el espacio restante */
-            padding: 20px; /* Ajusta el padding según sea necesario */
-            box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+            padding: 20px;  
+            box-sizing: border-box;  
         }
         .resultados h2 {
             text-align: center;
@@ -219,7 +219,7 @@
         const deficit = maintenance - 500;
         const superavit = maintenance + 500;
 
-        // Calcula los macronutrientes (valores aproximados)
+        // Calcula los macronutrientes
         const proteina = peso * 2.2;
         const grasa = peso * 0.9;
         const carbohidratos = (maintenance - (proteina * 4 + grasa * 9)) / 4;
